@@ -46,8 +46,17 @@
 }
 
 .site-main .site-banner .site-title h3{
-    padding-top: 35%;
+    padding-top: "";
     font-weight: 500;
 }
+.site-main .site-banner .site-title h3{
+    content: 35%;
+    height: 2px;
+    width: 18vw;
+    background: #000;
+    display: inline-block;
+    margin-left: 5%;
+}
+
 
 /*End Banner Area*/
