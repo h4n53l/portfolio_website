@@ -1,0 +1,53 @@
+
+/*import fonts from conts.css */
+@import url(./fonts.css);
+
+/*CSS variables*/
+@import url(./partials/_variables.css);
+
+/*Start Navigation*/
+
+.header_area .main-menu .navbar .navbar-brand {
+    padding: 0 2rem 0 5rem;
+}
+
+.header_area .main-menu .navbar{
+    padding: 1rem 20rem;
+}
+
+.header_area .main-menu .nav-item .nav-link{
+    font: normal 500 15px/2px var(--roboto);
+    text-transform: uppercase;
+    padding: 1.7rem;
+    color: var(--title-color);
+}
+
+.header_area .main-menu .navbar-nav .active a{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.header_area .main-menu .navbar-nav a:hover{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+/*End Navigation*/
+
+/*Start Banner Area*/
+
+.site-main .site-banner{
+    background: url(https://via.placeholder.com/600x300/ededed/d3d3d3/?text=FancyBackgroundGraphic) no-repeat 0% 50%;
+}
+
+.site-main .site-banner .site-title h3{
+    padding-top: 35%;
+    font-weight: 500;
+}
+
+/*End Banner Area*/

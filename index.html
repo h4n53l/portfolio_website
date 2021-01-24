@@ -5,74 +5,103 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale">
     <title>Jonathan Hansel Awo</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Bootstrap CSS file -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="./css/all.min.css">
+
+    <!-- Custom CSS file -->
+    <link rel="stylesheet" href="./css/style.css">
+
 </head>
 
 <body>
-    <div class="main-container">
-        <nav class="header">
-            <h1 class="" id="greetings">Welcome, glad to see you here.</h1>
-            <ul class="">
-                <li><a href=#>HOME</a></li>
-                <li><a href=#>EXPERIENCE</a></li>
-                <li><a href=#>CONTACT ME</a></li>
-            </ul>
-    </div>
-    </nav>
-    <div class="profile">
-        <div class="col-4" id="profile-picture">
-            <img src="images/profile_picture.png"></img>
-        </div>
-        <div class="col-8" id="about">
-            <h2>My name is Jonathan Hansel Awo, and I am a Software 
-                Developer fluent in various programming languages.
-            </h2>
-        </div>
-    </div>
-    <div class="circle1"></div>
-    <div class="circle2"></div>
 
-    <div id="skills">
-        <div class="top-skills">
-            <div class="top-skill">
-                <h1>Python</h1>
-            </div>
-            <div class="top-skill">
-                <h1>JavaScript</h1>
-            </div>
-            <div class="top-skill">
-                <h1>React</h1>
-            </div>
-            <div class="top-skill">
-                <h1>Java</h1>
-            </div>
-        </div>
-        <div class="bottom-skills">
-            <div class="bottom-skill">
-                <h1>C#</h1>
-            </div>
-            <div class="bottom-skill">
-                <h1>C++</h1>
-            </div>
-            <div class="bottom-skill">
-                <h1>HTML</h1>
-            </div>
-            <div class="bottom-skill">
-                <h1>CSS</h1>
-            </div>
-        </div>
+    <!-- ================ Start Header Area ================ -->
 
-    </div>
+    <header class="header_area">
+        <div class="main-menu">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="https://via.placeholder.com/150x100?text=myLogo"
+                            alt="logo"></a>
 
-    <footer>
-        <ul>
-            <li><a href=#><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-            <li><a href=#><i class="fa fa-github" aria-hidden="true"></i></a></li>
-            <li><a href=#><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
-        </ul>
-    </footer>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <div class="me-auto"></div>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Experience</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Testimonials</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ================ End Header Area ================ -->
+
+    <!-- ================ Start Main Area ================ -->
+    <main class="site-main">
+        <!-- ================ Start Banner Area ================ -->
+        <section class="site-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 site-title">
+                        <h3 class="title-text">Hey</h3>
+                        <h1 class="title-text text-uppercase">I am Hansel</h1>
+                        <h4 class="title-text text-uppercase">a Software Developer</h4>
+                        <div class="site-buttons">
+                            <div class="d-flex flex-row flex-wrap">
+                                <button type="button" class="btn button primary-button mr-4 text-uppercase">chat me up</button>
+                                <button type="button" class="btn button secondary-button mr-4 text-uppercase">View CV</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 banner-image">
+                    <img src="https://via.placeholder.com/400?text=FeatureGraphicOfMe" alt="banner-image" class="img-fluid">
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================ End Banner Area ================ -->
+
+    </main>
+    <!-- ================ End Main Area ================ -->
+    <!-- ================  ================ -->
+    <!-- ================  ================ -->
+    <!-- ================ Footer Area ================ -->
+
+
+    <!-- Jquery js file -->
+    <script src="./javascript/jquery-3-5-1.js">
+    </script>
+
+    <!-- Bootstrap js file -->
+    <script src="./javascript/bootstrap.min.js">
+    </script>
 </body>
 
 </html>
