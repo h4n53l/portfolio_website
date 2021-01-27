@@ -72,23 +72,17 @@
 
 .site-main .site-banner .banner-image{
     position: relative;
-    margin-bottom: 50rem;
+    
 }
 
 .site-main .site-banner .banner-image > img{
     padding: 7rem 0rem;
-    width: 90rem;
-    
+    width: 60rem;
+    height: 50rem;
 }
 
-.site-main .site-banner .banner-image .secondary-image{
-    animation: zoominoutsinglefeatured 5s infinite;
-    z-index: 2;
-    position: absolute;
-}
 .site-main .site-banner .banner-image .primary-image{
     z-index: 3;
-    height: 35rem; 
     position: absolute;
 }
 
@@ -97,13 +91,13 @@
 
 @keyframes zoominoutsinglefeatured {
     0% {
-        transform: scale(1,1);
+        transform: scale(1.1,1);
     }
     50% {
-        transform: scale(1.1,1.1);
+        transform: scale(1.5,1.5);
     }
     100% {
-        transform: scale(1,1);
+        transform: scale(1.1,1.1);
     }
 }
 /*End Banner Area*/
