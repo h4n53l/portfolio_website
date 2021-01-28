@@ -19,7 +19,7 @@ p {
         font-family:'Roboto', cursive;
         font-weight: bold;
     }
-    
+
 .title-text{
     font: normal bold 50px/72px 'Roboto', cursive;
 }
@@ -317,7 +317,7 @@ position: sticky;
   }
   .experience-area .container .card .face.face1 .content p{
     font-size: 1em;
-    color: white;
+    color: whitesmoke;
     text-align: center;    
   }
   
