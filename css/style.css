@@ -1,12 +1,34 @@
 
 /*Import fonts from conts.css */
-@import url(./fonts.css);
+@font-face{
+    font-family: "Roboto";
+    src:'..fonts/Roboto/Roboto-Regular.ttf';
+}
 
-/*CSS variables*/
-@import url(./partials/_variables.css);
+/*Start Defaults*/
 
-/*Imort global styling*/
-@import url(./partials/_global.css);
+body{
+    background: #779EE3;
+}
+
+p {
+    font-family: 'Roboto', cursive;
+    font-size: 1.5em;}
+
+    h1{
+        font-family:'Roboto', cursive;
+        font-weight: bold;
+    }
+    
+.title-text{
+    font: normal bold 50px/72px 'Roboto', cursive;
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+/*End Defaults*/
 
 /*Start Navigation*/
 
@@ -19,7 +41,7 @@
 }
 
 .header_area .main-menu .nav-item .nav-link{
-    font: normal 500 15px/2px var(--roboto);
+    font: normal 500 15px/2px 'Roboto', cursive;
     text-transform: uppercase;
     padding: 1.7rem;
     color: var(--title-color);
@@ -44,22 +66,19 @@
 
 /*Start Banner Area*/
 
-.site-main .site-banner{
-    background: url(https://via.placeholder.com/600x300/ededed/d3d3d3/?text=FancyBackgroundGraphic) no-repeat 0% 50%;
+.site-main .site-banner .site-title{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10rem;
+    padding-top: 5rem;
+    padding-right: 5rem;
 }
 
-.site-main .site-banner .site-title h3{
-    padding-top: "";
-    font-weight: 500;
-}
-.site-main .site-banner .site-title h3::after{
-    content: "";
-    height: 2px;
-    width: 18vw;
-    background: #000;
-    display: inline-block;
-    margin-left: 5%;
-    transform: translateY(-10px);
+.site-main .site-banner .site-title .intro{
+display: flex;
+align-items: flex-start;
+flex-direction:column;
+padding-left: 15rem;
 }
 
 .site-main .site-banner .site-title h1{
@@ -68,13 +87,58 @@
 
 .site-main .site-banner .site-title h4{
     font-size: 1.5rem;
+
 }
 
-.site-main .site-banner .banner-image .primary-image{
-    right: 5px;
+.site-main .site-banner #container{
+    width: auto;
+    max-width: 600px;
+    height: auto;
+    max-height: 300px;
+    overflow: hidden;
+    right: -58%;
+    border: 10px solid #EEE5E5;
+    outline: 5px dashed #EEE5E5;
+    position: relative;
 }
 
+.site-main .site-banner #container img {
+	width: 120%;
+	height: 100%;
+	margin-bottom: -5px;
+	margin-left: -15px;
+	transition: all 0.3s ease-out;
+	position: relative;
+	z-index: 2;
+}
 
+.site-main .site-banner #container:hover img {
+	transform: scale(1.2, 1.2);
+	z-index: 9;
+}
+
+.site-main .site-banner .box-text {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 3;
+	padding: 10px;
+    background-image: linear-gradient( 135deg, rgba(129, 255, 239, 0.50) 10%, rgba(240, 103, 180, 0.65) 100%);
+	opacity: 1;
+	transition: 0.3s linear;
+	color: #FFF;
+	font-family: 'Roboto', cursive;
+	text-shadow: 2px 2px 2px #333;
+	
+}
+.site-main .site-banner .box-text h3 {
+	font-size: 2.2em;
+	font-family: 'Roboto', cursive;
+}
+
+.site-main .site-banner .box-text:hover{opacity: 0;}
 
 /*End Banner Area*/
 
@@ -83,21 +147,41 @@
 .site-main .about-area{
     padding: 8rem 5rem;
 }
-
-.site-main .about-area .about-title h2 > span{
-    display:block;
-    font: normal bold 49px/60px var(--roboto);
-    letter-spacing: 21px;
-}
-
-.site-main .about-area .about-title .paragraph > p{
-    padding: .4rem 0;
-}
+.site-main .about-area .orb {
+    animation: spin 4s linear infinite;
+    width: 1000px;
+    height: 1000px;
+    margin-left: 400px;
+    border-radius: 50%;
+    position:absolute;
+    z-index: -1;
+    box-shadow: inset 0 0 100px #fff, inset 20px 0 100px violet, inset -20px 0 100px #0ff, inset 20px 0 500px violet, inset -20px 0 500px #0ff, 0 0 100px #fff, -10px 0 100px violet, 10px 0 100px #0ff;
+  }
+  .site-main .about-area .about-image{
+      height: 500px;
+      width: 500px;
+      padding-left: 5rem;
+    }
+    .site-main .about-area .about-title h2 > span{
+        display:block;
+        font: normal bold 49px/60px 'Roboto', cursive;
+        letter-spacing: 21px;
+    }
+    .site-main .about-area .about-title .paragraph > p{
+        padding: .4rem 0;
+    }
+    
+    @keyframes spin {
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
 
 /*End About Area*/
 
 /*Start Skill Area */
-iframe{
+.site-main .skill-area iframe{
     height: 50vh;
 }
 .header,
@@ -116,7 +200,7 @@ position: sticky;
   display:table-cell; 
   vertical-align: middle; 
   color: white; 
-  font-family: var(--roboto);     
+  font-family: 'Roboto', cursive;     
   font-size: 60px;
   padding-left: 20px;
 }
@@ -125,7 +209,7 @@ position: sticky;
   display:table-cell; 
   vertical-align: middle; 
   color: black; 
-  font-family:var(--roboto);     
+  font-family:'Roboto', cursive;     
   font-size: 60px;
   text-align:center
 }
@@ -154,3 +238,127 @@ position: sticky;
 }
 
 /*End Skill Area */
+
+/* Start Experience Area*/
+
+.experience-area .container{
+    width: 1000px;
+    position: relative;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    
+  }
+  
+  .experience-area .container .card{
+    position: relative;
+    background: #779EE3;
+    border-style: none;
+  }
+  
+  .experience-area .container .card .face{
+    width:300px;
+    height: 200px;
+    transition:.4s;
+    
+  }
+  
+  .experience-area .container .card .face.face1{
+    position: relative;
+    background:#2157A1;
+    display: flex;
+    justify-content: center;
+    align-content:center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+  }
+  
+  .experience-area .container .card:hover .face.face1{
+    transform: translateY(0);
+    box-shadow:
+      inset 0 0 60px whitesmoke,
+      inset 20px 0 80px #f0f,
+      inset -20px 0 80px #0ff,
+      inset 20px 0 300px #f0f,
+      inset -20px 0 300px #0ff,
+      0 0 50px #fff,
+      -10px 0 80px #f0f,
+      10px 0 80px #0ff;
+     
+  }
+  .experience-area .container .card:hover .face.face1 p{
+    opacity: 0;
+  }
+  .experience-area .container .card .face.face1 .content h2, i{
+    opacity: .2;
+    transition:  0.5s;
+    text-align: center; 
+  
+  }
+  
+  .experience-area .container .card:hover .face.face1 .content{
+    opacity: 1;
+   
+  }
+  
+  .experience-area .container .card .face.face1 .content i{
+    font-size: 3em;
+    color: white;
+    display: inline-block;
+     
+  }
+  
+  .experience-area .container .card .face.face1 .content h2{
+    font-size: 2em;
+    color: white;
+    text-align: center;    
+  }
+  .experience-area .container .card .face.face1 .content p{
+    font-size: 1em;
+    color: white;
+    text-align: center;    
+  }
+  
+  .experience-area .container .card .face.face1 .content a{
+     transition: .5s;
+  }
+  
+  .experience-area .container .card .face.face2{
+     position: relative;
+     background: whitesmoke;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0,0,0,.8);
+    transform: translateY(-100px);
+  }
+  
+  .experience-area .container .card:hover .face.face2{
+      transform: translateY(0);
+  
+  } 
+  .experience-area .container .card .face.face2 .content p, a{
+    font-size: 10pt;
+    margin: 0 ;
+    padding: 0;
+    color:#333;
+  } 
+  .experience-area .container .card .face.face2 .content a{
+    text-decoration:none;
+    color: black;
+    box-sizing: border-box;
+    outline : 1px dashed #333;
+    padding: 10px;
+    margin: 15px 0 0;
+    display: inline-block;
+  }
+  .experience-area .container .card .face.face2 .content a:hover{
+    background: #333 ;
+    color: whitesmoke; 
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+  }
+/* End Experience Area*/
