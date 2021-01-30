@@ -31,36 +31,91 @@ p {
 /*End Defaults*/
 
 /*Start Navigation*/
-
-.header_area .main-menu .navbar .navbar-brand {
-    padding: 0 2rem 0 5rem;
+.header_area{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
 }
 
-.header_area .main-menu .navbar{
-    padding: 1rem 20rem;
+h1.title{
+	text-indent:-9000px;
+	width:633px;
+	height:69px;
 }
-
-.header_area .main-menu .nav-item .nav-link{
-    font: normal 500 15px/2px 'Roboto', cursive;
-    text-transform: uppercase;
-    padding: 1.7rem;
-    color: var(--title-color);
+ul.sdt_menu{
+	margin:0;
+	padding:0;
+	list-style: none;
+	font-family:"Myriad Pro", "Trebuchet MS", sans-serif;
+	font-size:14px;
+	width:1020px;
 }
-
-.header_area .main-menu .navbar-nav .active a{
-    background: var(--gradient-color);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+ul.sdt_menu a{
+	text-decoration:none;
+	outline:none;
 }
-
-.header_area .main-menu .navbar-nav a:hover{
-    background: var(--gradient-color);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+ul.sdt_menu li{
+	float:left;
+	width:170px;
+	height:85px;
+	position:relative;
+	top:10px;
+	cursor:pointer;
 }
-
+ul.sdt_menu li > a{
+	position:absolute;
+	left:100px;
+	width:170px;
+	height:85px;
+	z-index:12;
+}
+ul.sdt_menu li a img{
+	border:none;
+	position:absolute;
+	width:0px;
+	height:0px;
+	bottom:0px;
+	left:85px;
+	z-index:100;
+}
+ul.sdt_menu li span.sdt_wrap{
+	position:absolute;
+	top:25px;
+	left:0px;
+	width:170px;
+	height:60px;
+	z-index:15;
+}
+ul.sdt_menu li span.sdt_active{
+	position:absolute;
+	background: #779EE3;
+	top:85px;
+	width:170px;
+	height:0px;
+	left:0px;
+	z-index:14;
+}
+ul.sdt_menu li span span.sdt_link,
+ul.sdt_menu li span span.sdt_descr,
+ul.sdt_menu li div.sdt_box a{
+	margin-left:15px;
+	text-transform:uppercase;
+	text-shadow:1px 1px 1px #000;
+}
+ul.sdt_menu li span span.sdt_link{
+	color:#fff;
+	font-size:24px;
+	float:left;
+	clear:both;
+}
+ul.sdt_menu li span span.sdt_descr{
+	color:#fff;
+	float:left;
+	clear:both;
+	width:155px; 
+	font-size:10px;
+	letter-spacing:1px;
+}
 
 /*End Navigation*/
 
@@ -149,18 +204,16 @@ padding-left: 15rem;
 }
 .site-main .about-area .orb {
     animation: spin 4s linear infinite;
-    width: 1000px;
-    height: 1000px;
-    margin-left: 400px;
+    width: 500px;
+    height: 500px;
+    padding-left: 5rem;
     border-radius: 50%;
-    position:absolute;
     z-index: -1;
     box-shadow: inset 0 0 100px #fff, inset 20px 0 100px violet, inset -20px 0 100px #0ff, inset 20px 0 500px violet, inset -20px 0 500px #0ff, 0 0 100px #fff, -10px 0 100px violet, 10px 0 100px #0ff;
   }
   .site-main .about-area .about-image{
       height: 500px;
       width: 500px;
-      padding-left: 5rem;
     }
     .site-main .about-area .about-title h2 > span{
         display:block;
