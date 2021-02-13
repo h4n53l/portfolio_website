@@ -1,176 +1,213 @@
 <!DOCTYPE html>
-<html lang="en">
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale">
-    <title>Jonathan Hansel Awo</title>
-    <!-- Bootstrap CSS file -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="assets/css/styles.css">
 
-    <!-- Fontawesome -->
-    <link rel="stylesheet" href="css/all.min.css">
+        <!-- ===== BOX ICONS ===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-    <!-- Custom CSS file -->
-    <link rel="stylesheet" href="css/style.css">
+        <title>Jonathan Hansel Awo Portfolio</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Jonathan Hansel Awo</a>
+                </div>
 
-</head>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
 
-<body>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
 
-    <!-- ================ Start Header Area ================ -->
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home" id="home">
+                <div class="home__container bd-grid">
+                    <h1 class="home__title"><span>HE</span><br>LLO.</h1>
 
-    <header class="header_area">
-        <div class="content">
-			<ul id="sdt_menu" class="sdt_menu">
-				<li>
-					<a href="#">
-						<img src="https://via.placeholder.com/150x75x75" alt=""/>
-						<span class="sdt_active"></span>
-						<span class="sdt_wrap">
-							<span class="sdt_link">Home</span>
-							<span class="sdt_descr">Welcome</span>
-						</span>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<img src="https://via.placeholder.com/150x75x75" alt=""/>
-						<span class="sdt_active"></span>
-						<span class="sdt_wrap">
-							<span class="sdt_link">About Me</span>
-							<span class="sdt_descr">Get to know me</span>
-						</span>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<img src="https://via.placeholder.com/150x75x75" alt=""/>
-						<span class="sdt_active"></span>
-						<span class="sdt_wrap">
-							<span class="sdt_link">Skills</span>
-							<span class="sdt_descr">My programming skills</span>
-						</span>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<img src="https://via.placeholder.com/150x75x75" alt=""/>
-						<span class="sdt_active"></span>
-						<span class="sdt_wrap">
-							<span class="sdt_link">Experience</span>
-							<span class="sdt_descr">Places I have worked at</span>
-						</span>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<img src="https://via.placeholder.com/150x75x75" alt=""/>
-						<span class="sdt_active"></span>
-						<span class="sdt_wrap">
-							<span class="sdt_link">Projects</span>
-							<span class="sdt_descr">My works</span>
-						</span>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<img src="https://via.placeholder.com/150x75x75" alt=""/>
-						<span class="sdt_active"></span>
-						<span class="sdt_wrap">
-							<span class="sdt_link">Contact Me</span>
-							<span class="sdt_descr">Let's have a chat</span>
-						</span>
-					</a>
-				</li>
-			</ul>
-		</div>
-    </header>
-
-    <!-- ================ End Header Area ================ -->
-
-    <!-- ================ Start Main Area ================ -->
-    <main class="site-main">
-        <!-- ================ Start Banner Area ================ -->
-        <section class="site-banner">
-            <div class="container-fluid">
-                <div class="row items">
-                    <div class="col-lg-12 col-md-12 site-title">
-                        <h2 class="title-text">Hi, Welcome!</h2>
-                        <div class="intro">
-                            <h1 class="title-text text-uppercase">I am Hansel</h1>
-                            <h4 class="title-text text-uppercase">a Software Developer</h4>
-                        </div>
+                    <div class="home__scroll">
+                        <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt' ></i>Scroll down</a>
                     </div>
-                    <div class="col-lg-6 col-md-12 banner-image" id = "container">
 
-                        <img src="https://static.tumblr.com/f9f4253d58950721ab4e47214ebcac39/asrymop/9P4nnlfhb/tumblr_static_tumblr_static_ck5wlz6qil4ccsgw04cwwocsw_640.gif"
-                            alt="banner-image">
-                        <div class="box-text">
-                            <h3>Lorem ipsum</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo
-                            </p>
+                    <img src="assets/images/me.png" alt="" class="home__img">
+                </div>
+            </section>
+            
+            <!--===== ABOUT =====-->
+            <section class="about section" id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/images/me.png" alt="">
+                    </div>
+
+                    <div>
+                        <h2 class="about__subtitle">I am Hansel</h2>
+                        <span class="about__profession">A Software Developer</span>
+                        <p class="about__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci consectetur, architecto quas fugiat, iste inventore facere repellendus delectus id, vitae blanditiis.</p>
+
+                        <div class="about__social">
+                            <a href="#" class="about__social-icon"><i class='bx bxl-linkedin' ></i></a>
+                            <a href="#" class="about__social-icon"><i class='bx bxl-github' ></i></a>
+                            <a href="#" class="about__social-icon"><i class='bx bxl-dribbble' ></i></a>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- ================ End Banner Area ================ -->
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
 
-        <!-- ================ Start About Area ================ -->
-
-        <section class="about-area">
-            <div class="container-fluid">
-                <div class="row">  
-                    <div class="col-lg-6 col-md-12">
-                        <div class="orb"></div>
+                <div class="skills__container bd-grid">
+                    <div class="skills__box">
+                        <h3 class="skills__subtitle">Web Development</h3>
+                        <span class="skills__name">Html</span>
+                        <span class="skills__name">Css</span>
+                        <span class="skills__name">Javascript</span>
+                        <span class="skills__name">Scss</span>
+                        <span class="skills__name">React</span>
+                        
+                        <h3 class="skills__subtitle">Programming</h3>
+                        <span class="skills__name">Python</span>
+                        <span class="skills__name">Java</span>
+                        <span class="skills__name">C++</span>
+                        
+                        <h3 class="skills__subtitle">Graphics Design</h3>
+                        <span class="skills__name">Adobe Photoshop</span>
+                        <span class="skills__name">Adobe Illustrator</span>
+                        <span class="skills__name">Blender</span>
                     </div>
-                    <div class="col-lg-6 col-md-12 about-title">
-                        <h2 class="text-uppercase">
-                            <span>Meet me</span>
-                        </h2>
-                        <div class="paragraph py-4 w-75">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo
-                                voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia
-                                molestias
-                                vitae fugiat aspernatur alias corporis?
-                            </p>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo
-                                voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia
-                                molestias
-                                vitae fugiat aspernatur alias corporis?
-                            </p>
+
+                    <div class="skills__img">
+                        <img src="assets/images/skill.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== PROJECTS =====-->
+            <section class="portfolio section" id="portfolio">
+                <h2 class="section-title">Projects</h2>
+
+                <div class="portfolio__container bd-grid">
+                    <div class="portfolio__img">
+                        <img src="assets/images/work1.jpg" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="#" class="portfolio__link-name">View details</a>
+                        </div>
+                    </div>
+                    <div class="portfolio__img">
+                        <img src="assets/images/work2.jpg" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="#" class="portfolio__link-name">View details</a>
+                        </div>
+                    </div>
+                    <div class="portfolio__img">
+                        <img src="assets/images/work3.jpg" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="#" class="portfolio__link-name">View details</a>
+                        </div>
+                    </div>
+                    <div class="portfolio__img">
+                        <img src="assets/images/work4.jpg" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="#" class="portfolio__link-name">View details</a>
+                        </div>
+                    </div>
+                    <div class="portfolio__img">
+                        <img src="assets/images/work5.jpg" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="#" class="portfolio__link-name">View details</a>
+                        </div>
+                    </div>
+                    <div class="portfolio__img">
+                        <img src="assets/images/work6.jpg" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="#" class="portfolio__link-name">View details</a>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- ================ End About Area ================ -->
+            </section>
 
-        <!-- ================ Start Skill Area ================ -->
+            <!-- ================ Start Experience Area ================ 
+            <section class="portfolio section" id="portfolio">
+                <h2 class="section-title">Work Experience</h2>
 
-        <section class="skill-area">
-            <div class="container-fluid">
-                <div class="row">
-                    <iframe src="skills.html" title="Hansel Jonathan's skills"></iframe>
+                <div class="portfolio__container bd-grid">
+                    <div class="portfolio__img">
+                        <img src="assets/images/work1.jpg" alt="">
 
+                        <div class="portfolio__link">
+                            <a href="#" class="portfolio__link-name">View details</a>
+                        </div>
+                    </div>
+                    <div class="portfolio__img">
+                        <img src="assets/images/work2.jpg" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="#" class="portfolio__link-name">View details</a>
+                        </div>
+                    </div>
+                    <div class="portfolio__img">
+                        <img src="assets/images/work3.jpg" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="#" class="portfolio__link-name">View details</a>
+                        </div>
+                    </div>
+                    <div class="portfolio__img">
+                        <img src="assets/images/work4.jpg" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="#" class="portfolio__link-name">View details</a>
+                        </div>
+                    </div>
+                    <div class="portfolio__img">
+                        <img src="assets/images/work5.jpg" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="#" class="portfolio__link-name">View details</a>
+                        </div>
+                    </div>
+                    <div class="portfolio__img">
+                        <img src="assets/images/work6.jpg" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="#" class="portfolio__link-name">View details</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section -->
 
-        <!-- ================ End Skill Area ================ -->
-
-
-        <!-- ================ Start Experience Area ================ -->
-        <section class="experience-area">
-            <br><br><br>
-            <h1 class="text-uppercase">Work Experience</h1>
-        <div class="container">
-            <div class="card">
+            <!-- ================ Start Experience Area ================ -->
+        <section class="experience-area section">
+            <h2 class="section-title">Work Experience</h2>
+        <div class="experience_container  bd-grid">
+            <div class="card portfolio__img">
                 <div class="face face1">
                     <div class="content">
                         <i class="fab fa-windows"></i>
@@ -188,7 +225,7 @@
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card portfolio__img">
                 <div class="face face1">
                     <div class="content">
                         <i class="fab fa-android"></i>
@@ -208,10 +245,9 @@
             </div>
 
 
-            <div class="card">
+            <div class="card portfolio__img">
                 <div class="face face1">
                     <div class="content">
-                        <i class="fab fa-apple"></i>
                         <h2>Seimens</h2>
                         <p>Touch Here</p>
                     </div>
@@ -228,27 +264,65 @@
             </div>
         </div>
     </section>
-        <!-- ================ End Experience Area ================ -->
+       <!-- ================ End Experience Area ================ -->
 
-        <!-- ================  ================ -->
-        <!-- ================  ================ -->
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+                <div class="contact__container bd-grid">
+                    <div class="contact__info">
+                        <h3 class="contact__subtitle">INFO</h3>
+                        <span class="contact__text">I usually respond between 9am to 9pm BST</span>
+                    </div>
 
-    </main>
-    <!-- ================ End Main Area ================ -->
-    <!-- ================ Footer Area ================ -->
+                    <form action="" class="contact__form">
+                        <div class="contact__inputs">
+                            <input type="text" placeholder="Name" class="contact__input">
+                            <input type="mail" placeholder="Email" class="contact__input">
+                        </div>
+
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+
+                        <input type="submit" value="Submit" class="contact__button">
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer section">
+            <div class="footer__container bd-grid">
+                <div class="footer__data">
+                    <h2 class="footer__title">Jonathan Hansel Awo</h2>
+                    <p class="footer__text">I'm Jonathan Hansel Awo and this is my personal website</p>
+                </div>
+
+                <div class="footer__data">
+                    <h2 class="footer__title">EXPLORE</h2>
+                    <ul>
+                        <li><a href="#home" class="footer__link">Home</a></li>
+                        <li><a href="#about" class="footer__link">About</a></li>
+                        <li><a href="#skills" class="footer__link">Skills</a></li>
+                        <li><a href="#portfolio" class="footer__link">Portfolio</a></li>
+                        <li><a href="#Contact" class="footer__link">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__data">
+                    <h2 class="footer__title">FOLLOW</h2>
+                    <a href="#" class="footer__social"><i class='bx bxl-facebook' ></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-instagram' ></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-twitter' ></i></a>
+                </div>
 
 
-    <!-- Jquery js file -->
-    <script src="javascript/jquery-3-5-1.js">
-    </script>
+            </div>
+        </footer>
 
-    <!-- Bootstrap js file -->
-    <script src="javascript/bootstrap.min.js"></script>
-            
-    <!-- The JavaScript -->
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-    <script type="text/javascript" src="javascript/jquery.easing.1.3.js"></script>
-    <script type="text/javascript" src="javascript/script.js"></script>
-</body>
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
 
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
